@@ -1,0 +1,96 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+ }
+ body{
+    background: #83aa83;
+ }
+ .container{
+    width: 400px;
+    padding: 25px 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 15px;
+ }
+ .container p{
+    font-weight: 650;
+    font-size: 25px;
+    margin-bottom: 8px;
+    color: rgb(75, 126, 126);
+    margin-left: 20px;
+ }
+ .container input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #494e49;
+    outline: 0;
+    padding: 10px;
+    margin: 10px 0 15px;
+    border-radius: 8px;
+ }
+ .container button{
+
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    color: #272e27;
+    background: #bfa4f0;
+    font-weight: 600px;
+    font-size: 14px;
+    border: 0;
+    outline: 0;
+    box-shadow: 8px 10px 10px  rgb(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.4s;
+    margin:20px 0 ;
+ }
+ .container button:hover{
+   transform: scale(1.01 ,1.01);
+ }
+
+
+ .image{
+    /* border: 1px solid black; */
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+ }
+ .image img{
+    width: 100%;
+    padding: 10px;
+
+ }
+ .image.show-img{
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid #d1d1d1;
+
+ }
+
+ .error{
+    animation: shake 0.1s linear 10;
+ }
+ @keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-3px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{   
+        transform: translateX(3px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+ }
